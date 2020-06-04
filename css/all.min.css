@@ -1,2 +1,2 @@
-header{height:958px;background:url("/images/h_bg@2x.png") no-repeat center center;background-size:cover}
+html,body{font-family:'Roboto', sans-serif;font-size:20px}.container{width:960px;margin:0 auto}header{height:958px;background:url("/images/h_bg@2x.png") no-repeat center center;background-size:cover;color:#fff;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;-ms-flex-item-align:center;align-self:center}
 /*# sourceMappingURL=all.min.css.map */
