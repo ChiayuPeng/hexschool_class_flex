@@ -4,9 +4,10 @@ body {
     font-size: 20px;
 }
 
-.container {
-    width: 960px;
-    margin: 0 auto;
+p {
+    font-size: 24px;
+    line-height: 1.75;
+    ;
 }
 
 header {
@@ -18,5 +19,198 @@ header {
     justify-content: center;
     align-self: center;
 
-    .title-block {}
+
+    .title-block {
+        width: 308px;
+        height: 100%;
+        margin: 0 auto;
+        font-style: italic;
+        font-weight: bold;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        h1 {
+            font-size: 24px;
+
+            span {
+                display: block;
+                font-size: 3.3em;
+                line-height: 1.175;
+            }
+        }
+
+        p {
+            margin: 32px 12.5px 0;
+        }
+
+        ul {
+            margin-top: 48px;
+            display: flex;
+            justify-content: space-around;
+
+            li {
+                +li {
+                    margin-left: 16px;
+                }
+
+                a {
+                    display: block;
+
+                    img {
+                        display: block;
+                    }
+                }
+            }
+        }
+    }
+}
+
+section {
+    padding-top: 64px;
+    text-align: center;
+    font-style: italic;
+    font-family: "Roboto", 'Noto Sans TC', sans-serif;
+
+    .container {
+        width: 1200px;
+        margin: 0 auto;
+    }
+
+    h2 {
+
+        font-size: 64px;
+        margin-bottom: 16px;
+        font-weight: 500;
+    }
+
+    img {
+        width: 100%;
+        display: block;
+        margin: 0 auto;
+    }
+
+    &.dark-bg {
+        background-color: #000000;
+        color: #fff;
+        padding-bottom: 80px;
+    }
+
+    &.about {
+        font-weight: bold;
+        padding-bottom: 56px;
+
+        img {
+            width: 384px;
+            margin: 24px auto;
+        }
+
+        p {
+
+            margin: 2px 0;
+        }
+
+        ul {
+            width: 384px;
+            margin: 0 auto;
+            margin-top: 23px;
+            border-top: 1px solid #000;
+            font-size: 24px;
+
+            li {
+                display: table;
+                margin-left: -38px;
+                margin: 0 auto;
+
+                padding: 32px 0;
+                padding-left: 38px;
+                position: relative;
+
+                &::before {
+                    content: '';
+                    display: block;
+                    position: absolute;
+                    width: 22px;
+                    height: 22px;
+                    border-radius: 50%;
+                    left: 0;
+                    background-color: #891818;
+                }
+
+                +li {
+                    padding-top: 0;
+                }
+            }
+        }
+
+    }
+
+    &.brand {
+        background-color: #000;
+
+        .description {
+            margin-top: 32px;
+            font-size: 20px;
+            font-style: normal;
+        }
+
+        img {
+
+            &.main-pic {
+                width: 792px;
+                margin-top: 48px;
+                margin-bottom: 40px;
+
+            }
+        }
+
+
+        .d-flex {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            margin-bottom: 80px;
+
+            .item {
+                &+.item {
+                    margin-left: 24px;
+                }
+            }
+        }
+    }
+
+    &.other {
+        background: url(../images/otherwork_bg@2x.png) no-repeat bottom center;
+        background-size: contain;
+
+        .pic_group {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            color: #fff;
+
+            .item {
+                &.item-f {
+                    width: 384px;
+                }
+
+                &.item-c {
+                    width: 588px;
+                }
+            }
+        }
+    }
+
+    &.contact {
+
+        p {
+
+
+            a {
+                color: #fff;
+                text-decoration: none;
+            }
+        }
+    }
 }
