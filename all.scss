@@ -91,6 +91,12 @@ section {
         margin: 0 auto;
     }
 
+    .description {
+        margin-top: 32px;
+        font-size: 20px;
+        font-style: normal;
+    }
+
     &.dark-bg {
         background-color: #000000;
         color: #fff;
@@ -149,18 +155,12 @@ section {
     &.brand {
         background-color: #000;
 
-        .description {
-            margin-top: 32px;
-            font-size: 20px;
-            font-style: normal;
-        }
-
         img {
 
             &.main-pic {
                 width: 792px;
-                margin-top: 48px;
-                margin-bottom: 40px;
+                padding-top: 48px;
+                padding-bottom: 40px;
 
             }
         }
@@ -189,6 +189,7 @@ section {
             flex-wrap: wrap;
             justify-content: space-between;
             color: #fff;
+            padding: 48px 0 162px;
 
             .item {
                 &.item-f {
@@ -197,6 +198,15 @@ section {
 
                 &.item-c {
                     width: 588px;
+                    margin: 56px auto;
+                }
+
+                img {
+                    margin-bottom: 16px;
+                }
+
+                span {
+                    font-style: normal;
                 }
             }
         }
